@@ -1,0 +1,314 @@
+*{
+    padding: 0;margin: 0;
+}
+
+/***************************** navbar ****************************/
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(219, 217, 217);
+    padding: 25px 5px ;    
+}
+.nav-left {
+    display: none;
+}
+.midd-navbar {
+    display: flex;
+}
+.midd-navbar li {
+    margin: 0 6px;
+    flex-direction: column;
+    padding: 0 5px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.midd-navbar li a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+}
+.midd-navbar li a p {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.dropdown-nav1 {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+#data {
+    text-align: left;
+    padding: 10px 0px;
+    font-size: 16px;
+    display: block;
+}
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 10px 16px 0px;
+    z-index: 1;
+    margin-top: 20px;padding: 5px;
+}
+
+.dropdown-nav2 {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/***************************** header *************************/
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-evenly;
+    height: 70px;
+    align-items: center;
+    border-bottom: 0.5px solid lightgray;
+    margin-bottom: 50px;
+}
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 50px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+
+}
+header input{
+    width: 200px;
+    height: 30px;
+}
+
+header p a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*********************** fixed card ********************/
+
+
+.fixed-card{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(105.21deg, #3743ab 2.85%, #141b56 99.41%);
+    width: 350px;
+    height: 130px;
+    z-index: 900;
+    border-radius: 20px;
+}
+.fixed-leftcard img{
+    width: 90px;
+    padding: 20px;
+}
+.fixed-leftcard  h1{
+    font-size: 15px;
+    color: white;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+
+}
+.fixed-leftcard p{
+    font-size: 14px;
+    color: white;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.fixed-rightcard img{
+    width: 120px;
+    height: 150px;
+    position: relative;
+    top: -20px;
+}
+
+/******************************* coron ************************/
+
+.corona{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(219, 218, 218);
+}
+.coron-myths{
+    position: relative;
+    width: 50%;
+    text-align: center;
+    top: -80px;
+    background-color: white;
+    
+}
+
+
+.coron-myths p{
+    padding: 20px 80px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.coron-myths h1{
+    padding: 0px 80px;
+    padding-top: 60px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.coron-myths button{
+    width: 100px;
+    height: 40px;
+    margin-bottom: 50px;
+}
+
+
+.coron-myths1-img img{
+    width: 400px;
+    height: 300px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.coron-myths1-looking{
+    background-color: white;
+    text-align: center;
+    width: 350px;
+    padding: 30px ;
+    border-radius: 10px;
+
+}
+.coron-myths1-looking p{
+    font-size: 16px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    margin-top: 10px;
+}
+.coron-myths1-looking h4{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    margin-top: 20px;
+}
+.coron-myths1-looking button{
+    margin-top: 10px;
+    height: 40px;
+    width: 250px;
+}
+
+.coron-myths1-fact{
+    background-color: white;
+    margin-top: 50px;
+    width: 350px;
+    padding: 30px ;
+    border-radius: 10px;
+}
+.coron-myths1-fact h4{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    margin-top: 20px;
+}
+.coron-myths1-fact p{
+    padding: 10px 0px;
+}
+.coron-myths1-fact p span{
+    color: skyblue;
+}
+
+/*************************** links ***************************/
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+    background-color: #28328c;
+    
+}
+.links1{
+    padding-top: 30px;
+}
+.links1 ul h6{
+   font-size: 14px;
+
+   color: white;
+   font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.links1 ul li{
+    padding: 2px;
+}
+.links1 ul li a{
+   text-decoration: none;
+   color: white;
+   font-size:14px;
+   font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.logo-link{
+    background-color: #28328c;
+    text-align: center;
+    padding-top: 20px;
+}
+.logo-link p{
+    color:gray;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+
+
+@media(max-width: 1200px){
+    .nav-left {
+        display: block;
+    }
+    .fixed-card{
+        display: none;
+    }
+    .midd-navbar {
+        display: none;
+    }
+    header ul{
+        display: none;
+    }
+
+.coron-myths img{
+    width: 200px;
+}
+
+}
+
+
+
+
+@media(max-width: 600px){
+    .coron-myths{
+        width: 300px;
+    }
+    .coron-myths p{
+
+        padding: 20px 05px;
+      
+    }
+    .coron-myths h1{
+        font-size: 22px;
+        padding-top: 60px;
+        font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    }
+    .coron-myths1-img img{
+        width: 320px;
+        height: 230px;
+        margin-top: 120px;
+        margin-bottom: 50px;
+    }
+    .coron-myths1-looking{
+        background-color: white;
+        text-align: center;
+        width: 250px;
+        padding: 30px ;
+        border-radius: 10px;
+    
+    }
+    
+.coron-myths1-fact{
+    background-color: white;
+    margin-top: 50px;
+    width: 250px;
+    padding: 30px ;
+    border-radius: 10px;
+}
+}

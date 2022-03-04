@@ -1,0 +1,670 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*********************************   navbar  ************************/
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 0.5px solid rgb(219, 217, 217);
+    padding: 25px 5px ;    
+   
+}
+
+.bar-nav{
+
+    position: absolute;
+    box-shadow: 0px 10px 16px 0px;
+    z-index: 1;
+    width: 100%;
+    margin-left: -30px;
+    margin-top: 2px;
+    padding: 5px;
+    background-color: white;
+    display: none;
+
+}
+
+.bar-nav li a{
+    text-align: left;
+    padding: 20px 0px;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+.nav-left:hover .bar-nav{
+    display: block;
+}
+
+.nav-left {
+    display: none;
+    cursor: pointer;
+}
+.midd-navbar {
+    display: flex;
+}
+.midd-navbar li {
+    margin: 0 6px;
+    flex-direction: column;
+    padding: 0 5px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.midd-navbar li a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: medium;
+    color: black;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.midd-navbar li a p {
+    font-weight: 400;
+    font-size: 15px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.dropdown-nav1 {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+#data {
+    text-align: left;
+    padding: 10px 0px;
+    font-size: 16px;
+    display: block;
+}
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 10px 16px 0px;
+    z-index: 1;
+    background-color: white;
+    margin-top: 20px;padding: 5px;
+}
+.show{
+    display: block;
+}
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 10px 16px 0px;
+    z-index: 1;
+    background-color: white;
+    margin-top: 20px;padding: 5px;
+}
+.show{
+    display: block;
+}
+
+.dropdown-nav2 {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+/************* inputs and add ******************/
+.input {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-input {
+    margin: 50px 0px;
+
+}
+
+#location {
+    height: 35px;
+    width: 250px;
+}
+
+#search {
+    height: 35px;
+    width: 450px;
+}
+
+.add-img {
+    height: 40px;
+    width: 250px;
+    margin: 50px 0px;
+}
+
+/************ banner section **************/
+
+
+.banner {
+    background: linear-gradient(105.21deg, #3743ab 2.85%, #141b56 99.41%);
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    border-radius: 35px;
+    margin: 40px 60px;
+    height: 300px;
+}
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 85px;
+    /* margin-top: -40px; */
+}
+.banner-left img {
+    width: 250px;
+    margin: 18px 0px;
+}
+.banner-left p {
+    font-size: 14px;
+    color: white;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.banner-left h1 {
+    font-weight: 800;
+    color: white;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+
+}
+.banner-left button {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 25px;
+}
+.banner-right {
+    position: absolute;
+    right: 100px;
+    width: 500px;
+    height: 300px;
+}
+
+/*********************** fixed card ********************/
+
+
+.fixed-card{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: linear-gradient(105.21deg, #3743ab 2.85%, #141b56 99.41%);
+    width: 350px;
+    height: 130px;
+    z-index: 900;
+    border-radius: 20px;
+}
+.fixed-leftcard img{
+    width: 90px;
+    padding: 20px;
+}
+.fixed-leftcard  h1{
+    font-size: 15px;
+    color: white;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+
+}
+.fixed-leftcard p{
+    font-size: 14px;
+    color: white;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.fixed-rightcard img{
+    width: 120px;
+    height: 150px;
+    position: relative;
+    top: -20px;
+}
+
+
+/************************** card ***************************/
+
+.contact-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 35px auto;
+ }
+ .card{
+     position: relative;
+     width: 200px;
+     height: 300px;
+     border-radius: 20px;
+     margin-top: 25px;
+     box-shadow: 1px 5px 10px gray;
+ }
+ .card-img1{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 60%;
+     background-color: lightblue;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+ }
+ .card-imga{
+     position: absolute;
+     width: 70%;
+     right: 30px;
+     top: 5px;
+ }
+ .card-img2{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 60%;
+     background-color:lightskyblue;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+ }
+ .card-imgb{
+     position: absolute;
+     width: 70%;
+     right: 30px;
+     top: 32px;
+ 
+ }
+ .card-img3{
+     position: absolute;
+     top: 0;
+     right: 0;
+     width: 100%;
+     height: 60%;
+     background-color:lightgray;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+
+ }
+ .card-imgc{
+     position: absolute;
+     width: 70%;
+     right: 30px;
+     top: 38px;
+ }
+ .card-imgd{
+     position: absolute;
+     width: 80%;
+     right: 30px;
+     top: 40px;
+ }
+ .card-imge{
+     position: absolute;
+     width: 70%;
+ right: 30px;
+     top: 48px;
+ }
+ .card2{
+     position: absolute;
+     top: 60%;
+     margin-top: 20px;
+     margin-left: 20px;   
+     font-family: Camphor,Helvetica,Arial,sans-serif!important;
+     
+ }
+ .card2 p{
+     color: gray;
+     font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    } 
+
+    /************* consult ******************/
+.consult-view{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 80px;
+}
+.consult-view h2{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    font-size: 24px;
+}
+.consult-view p{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    font-size: 16px;
+}
+.consult-view button{
+    width: 200px;
+    background-color: white;
+    border: 2px solid skyblue;
+    color: skyblue;        
+}
+ 
+.consultnow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.consultnow1{
+    cursor: pointer;
+    height: 250px;
+    width: 130px;
+}
+.consultnow .consultnow1 img{
+    height: 120px;
+    width: 120px;
+}
+.consultnow .consultnow1 p{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.consultnow .consultnow1 h4{
+    color: skyblue;
+    font-size: 22px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+
+/****************** appointment ****************/
+.consult h2{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    font-size: 24px;
+    
+
+}
+.consult p{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    font-size: 16px;
+}
+.appointment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+   
+}
+.book-appointment{
+    cursor: pointer;
+    height: 330px;
+    width: 310px;
+    margin-top: 50px;
+   
+}
+.book-appointment h3{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.book-appointment p{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.book-appointment img{
+    height: 220px;
+    width: 310px;
+    border-radius: 10px;
+}
+
+/**************************** articles ************************/
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   margin: 30px;
+   padding: 50px;
+   border-top: 1px solid lightgray;
+   border-bottom: 1px solid lightgray;
+   
+}
+.read{
+    width: 400px;
+}
+.read p{
+    margin-top: 10px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.read button{
+    background-color: skyblue;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border: 1px solid skyblue;
+    margin-top: 10px;
+}
+.corona-read{
+    width: 350px;
+}
+.corona-read a{
+    text-decoration: none;
+}
+.corona-read img{
+    height: 250px;
+    width: 350px;
+}
+.corona-read p{
+    color: rgb(65, 114, 65);
+    margin-top: 10px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.corona-read h4{
+    margin-top: 10px;
+    color: black;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+
+/******************* review ********************/
+.review{
+    text-align: center;
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  
+}
+.review h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.review p{
+    margin-top: 20px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+
+
+/*************************  help ******************/
+
+.download{
+    display: flex;
+    justify-content:space-evenly;
+    background-color: rgb(247, 244, 244);
+   padding-bottom: 80px;
+}
+ .img1{
+    height: 400px;
+    width: 320px;
+    padding-top: 60px;
+}
+.download1{
+    width: 500px;
+    padding-top: 100px;
+}
+.download1 h1{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.download1 p{
+    margin-top: 20px;
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.download1 h4{
+    font-family: Camphor,Helvetica,Arial,sans-serif!important;
+    margin-top: 20px;
+}
+.download1 input{
+    height: 40px ;
+    margin-top: 20px;
+    width: 250px;
+    background-color: lightgray;
+}
+.download1 button{
+    width: 80px;
+    height: 45px;
+    color: white;
+    background-color: lightskyblue;
+}
+.download2{
+    margin-top: 20px;
+}
+.download2 img{
+    height: 50px;
+    width: 180px;
+    cursor: pointer;
+}
+
+
+/*************************** links ***************************/
+
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+    background-color: #28328c;
+    
+}
+.links1{
+    padding-top: 30px;
+}
+.links1 ul h6{
+   font-size: 14px;
+
+   color: white;
+   font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.links1 ul li{
+    padding: 2px;
+}
+.links1 ul li a{
+   text-decoration: none;
+   color: white;
+   font-size:14px;
+   font-family: Camphor,Helvetica,Arial,sans-serif!important;
+}
+.logo-link{
+    background-color: #28328c;
+    text-align: center;
+    padding-top: 20px;
+}
+.logo-link p{
+    color:gray;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+@media(max-width: 1200px){
+    .nav-left {
+        display: block;
+    }
+    .add-img {
+        display: none;
+    }
+    .midd-navbar {
+        display: none;
+    }
+
+}
+
+@media (max-width: 610px){
+    .banner{
+        display: none;
+
+    }
+    .input{
+        margin: 0px 20px;
+    }
+    #search {
+        height: 35px;
+        width: 300px;
+    }
+    .fixed-card{
+        position: static;
+        text-align: center;
+        width: auto;
+        margin: 0px 20px;
+    }
+    .review{
+
+        text-align: center;
+        margin-left: auto; 
+        width: auto;     
+    }
+
+    .download{
+        text-align: center;
+        display:block;
+        justify-content:space-evenly;
+        background-color: rgb(247, 244, 244);
+       padding-bottom: 80px;
+    }
+    .consult-view{
+        display:block;
+      
+    }
+    .download1{
+        width: auto;
+        padding-top: 100px;
+    }
+    .corona-read img{
+        height: 250px;
+        width: 320px;
+    }
+    .card{
+        position: relative;
+        width: 160px;
+        height: 300px;
+        border-radius: 20px;
+        margin-top: 25px;
+        box-shadow: 1px 5px 10px gray;
+    }
+    #card0{
+        position: relative;
+        width: 110px;
+        height:180px;
+        border-radius: 20px;
+        margin-top: 25px;
+        box-shadow: 1px 5px 10px gray;
+    }
+
+
+
+    .card-imga{
+        position: absolute;
+        width: 70%;
+        right: 30px;
+        top: 42px;
+    }
+    .card-imgb{
+        position: absolute;
+        width: 70%;
+        right: 30px;
+        top: 60px;
+    }
+   
+   .card-imgc{
+        position: absolute;
+        width: 70%;
+        right: 20px;
+        top: 28px;
+    }
+    .card-imgd{
+        position: absolute;
+        width: 80%;
+        right: 10px;
+        top: 30px;
+    }
+    .card-imge{
+        position: absolute;
+        width: 70%;
+        right: 20px;
+        top: 35px;
+    }
+    #med{
+        font-size: 16px;
+    }
+    #safe{
+        font-size: 12px;
+    }
+}
